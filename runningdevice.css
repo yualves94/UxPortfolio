@@ -1,0 +1,322 @@
+/* Running Device Project Page Styles */
+
+/* Override navigation for project page - restore original centered state */
+header {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  display: block !important;
+  padding: 20px !important;
+}
+
+#projects {
+  background-color: #1A1A1A;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.project-subtitle {
+  font-size: 32px;
+  color: #91F778;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.project-image {
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.project-description strong {
+  display: block;
+  margin-top: 20px;
+  color: #91F778;
+  font-weight: 700;
+}
+
+.project-challenge-goal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 60px auto 0 auto;
+  padding: 0 20px;
+}
+
+.project-block {
+  flex: 1 1 400px;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: left;
+}
+
+.project-block-title {
+  color: #91F778;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-block ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.project-block ul li::before {
+  content: "> ";
+  color: #91F778;
+  font-weight: bold;
+}
+
+/* Timeline */
+.project-timeline {
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-title {
+  font-size: 28px;
+  color: #91F778;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 40px 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #91F778;
+  z-index: 0;
+}
+
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #C5ADED;
+  position: relative;
+  top: 0;
+}
+
+.timeline-step span {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+/* Drawings and Iterations */
+.project-drawings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.drawing-block {
+  text-align: center;
+}
+
+.sketch-title {
+  color: #91F778;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sketch-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.full-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Caption */
+.sketch-caption {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-family: 'Source Code Pro', monospace;
+  text-align: left;
+}
+
+/* Usability & Iteration Specific Images */
+.usability-img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.usability-img.horizontal-img {
+  width: auto;
+  height: 300px;
+}
+
+.usability-img.vertical-img {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+}
+
+/* Back Button */
+.button-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.back-button {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  color: #111;
+  background-color: #91F778;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px solid #91F778;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: transparent;
+  color: #91F778;
+  border: 2px solid #91F778;
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 1024px) {
+  .project-challenge-goal {
+    gap: 40px;
+  }
+
+  .project-block {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+  #projects {
+    padding: 30px 15px;
+  }
+
+  .project-subtitle {
+    font-size: 24px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .project-description {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .project-challenge-goal {
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .project-block {
+    flex: 1 1 100%;
+    font-size: 16px;
+  }
+
+  .project-block-title {
+    font-size: 18px;
+  }
+
+  .timeline {
+    flex-direction: column;
+    padding: 20px 10px 0;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-step {
+    margin-bottom: 30px;
+  }
+
+  .timeline-step span {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .sketch-title {
+    font-size: 20px;
+  }
+
+  .sketch-image {
+    max-width: 100%;
+  }
+
+  .sketch-caption {
+    font-size: 16px;
+  }
+
+  .usability-img.horizontal-img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .usability-img.vertical-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
