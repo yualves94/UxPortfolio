@@ -1,0 +1,137 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+/* Global Styling */
+body {
+  background-color: #1A1A1A;
+  color: #91F778;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+nav ul {
+  list-style: none;
+  padding: 12px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 2px solid rgba(145, 247, 120, 0.3);
+}
+
+nav ul li {
+  display: inline;
+  margin: 0;
+}
+
+nav a {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #111;
+  background: #91F778;
+  border: 2px solid #91F778;
+}
+
+/* Main Content */
+.contact-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #91F778;
+  margin-bottom: 40px;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.contact-info p span {
+  color: #ccc; /* Light gray for actual email/phone text */
+}
+
+.contact-info a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #91F778;
+}
+
+/* Button */
+.button-container {
+  margin-top: 40px;
+}
+
+.back-button {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  color: #111;
+  background-color: #91F778;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px solid #91F778;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: transparent;
+  color: #91F778;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: auto;
+  border-top: 2px solid rgba(145, 247, 120, 0.3);
+}
