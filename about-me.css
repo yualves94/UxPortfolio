@@ -1,9 +1,17 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* Reset e base */
 body {
   background-color: #1A1A1A;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('Images/Slime3png.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
   color: #91F778;
   font-family: 'Source Code Pro', monospace;
   margin: 0;
@@ -16,8 +24,12 @@ body {
 /* Header */
 header {
   background-color: transparent;
-  padding: 20px;
-  text-align: center;
+  padding: 32px 20px 12px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  border-bottom: 2px solid rgba(145, 247, 120, 0.3);
 }
 
 nav ul {
@@ -27,11 +39,14 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 50px;
   width: fit-content;
   margin: 0 auto;
-  border: 2px solid rgba(145, 247, 120, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
@@ -59,6 +74,7 @@ nav a:hover {
 
 /* About Section */
 .about-me {
+  background-color: #1A1A1A;
   padding: 50px 20px;
   flex: 1;
   text-align: center;
@@ -88,6 +104,7 @@ nav a:hover {
 }
 
 .about-text {
+  font-family: 'Inter', sans-serif;
   max-width: 600px;
   text-align: left;
   font-size: 18px;
@@ -96,6 +113,7 @@ nav a:hover {
 }
 
 .about-text p {
+  font-family: 'Inter', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -134,7 +152,7 @@ nav a:hover {
 /* Back Button */
 .button-container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .back-button {
@@ -152,8 +170,9 @@ nav a:hover {
 }
 
 .back-button:hover {
-  background-color: transparent;
+  background-color: #111;
   color: #91F778;
+  border-color: #91F778;
 }
 
 /* Footer */
