@@ -53,6 +53,14 @@ header {
   font-weight: 700;
 }
 
+.sketch-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
+}
+
 .sketch-caption span {
   font-family: 'Source Code Pro', monospace;
 }
@@ -170,6 +178,10 @@ header {
 
   .project-block-title {
     font-size: 18px;
+  }
+
+  .sketch-caption {
+    font-size: 16px;
   }
 
   .back-button {
