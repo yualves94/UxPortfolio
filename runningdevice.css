@@ -217,8 +217,11 @@ header {
   color: #ccc;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.6;
+  letter-spacing: normal;
   text-align: left;
+  font-style: normal;
 }
 
 /* Caption */
@@ -227,7 +230,7 @@ header {
   color: #ccc;
   line-height: 1.6;
   margin-top: 20px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Inter', sans-serif;
   text-align: left;
 }
 
