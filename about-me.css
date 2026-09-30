@@ -186,3 +186,22 @@ footer {
   margin-top: auto;
   border-top: 2px solid rgba(145, 247, 120, 0.3);
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    padding: 10px 12px;
+    gap: 2px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
