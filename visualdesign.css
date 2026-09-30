@@ -954,6 +954,51 @@ body.lightbox-open {
 
 
 /* =========================
+   REFLECTION SECTION
+========================= */
+
+.full-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: transparent;
+}
+
+.reflection-section {
+  width: 100%;
+  box-sizing: border-box;
+  background: #1A1A1A;
+  padding: 50px 0 20px;
+}
+
+.reflection-section > .full-width {
+  padding: 0 20px;
+  background: transparent;
+}
+
+.reflection-section h3 {
+  color: #91F778;
+  font-size: 24px;
+  margin: 0 auto 10px;
+  font-weight: 700;
+  max-width: 900px;
+  text-align: center;
+}
+
+.reflection-section p {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  color: #ccc;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* =========================
    BACK BUTTON
 ========================= */
 
@@ -1004,23 +1049,33 @@ body.lightbox-open {
 ========================= */
 
 footer {
-  background-color: #1A1A1A;
-
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.9);
   color: rgba(255, 255, 255, 0.92);
-
   padding: 20px;
-
   text-align: center;
-
   border-top: 2px solid rgba(145, 247, 120, 0.3);
 }
 
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('Images/Slime3png.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  opacity: 0.55;
+  transform: scale(1.08);
+}
 
 footer p {
+  position: relative;
+  z-index: 1;
   font-weight: 700;
-
   font-size: 18px;
-
   margin: 0;
 }
 
@@ -1107,6 +1162,14 @@ footer p {
 
   .content-wrapper {
     padding: 40px 20px;
+  }
+
+  .reflection-section h3 {
+    font-size: 20px;
+  }
+
+  .reflection-section p {
+    font-size: 16px;
   }
 
 }
