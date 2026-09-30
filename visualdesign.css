@@ -106,6 +106,9 @@ nav a {
   border-radius: 30px;
 
   transition: all 0.3s ease-in-out;
+
+  line-height: normal;
+  white-space: nowrap;
 }
 
 
@@ -1187,8 +1190,18 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 24px 20px 12px;
+  }
+
   nav ul {
     flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  nav li,
+  nav a {
+    flex-shrink: 0;
     white-space: nowrap;
   }
 }
