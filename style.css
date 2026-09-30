@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @keyframes fadeInScale {
   from {
@@ -49,7 +50,7 @@ body {
 
 /* Header */
 header {
-  padding: 32px 20px 0;
+  padding: 32px 20px 12px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -128,14 +129,19 @@ nav a:hover {
 
 .profile-image-container {
   position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75);
 }
 
 .profile-image {
   width: 200px;
   height: 200px;
+  display: block;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75);
 }
 
 .main-shape {
@@ -169,9 +175,11 @@ nav a:hover {
   font-weight: 400 !important;
   margin: 0;
   line-height: 1.7;
+  font-family: 'Inter', sans-serif;
 }
 
 .window-text strong {
+  font-family: 'Source Code Pro', monospace;
   color: #D17CFF;
   font-weight: 700;
 }
@@ -415,6 +423,10 @@ nav a:hover {
   border-radius: 8px;
 }
 
+.minor-thumbnail {
+  object-position: center 68%;
+}
+
 .project-caption {
   padding: 12px 12px 14px;
   text-align: center;
@@ -426,6 +438,7 @@ nav a:hover {
 }
 
 .project-description {
+  font-family: 'Inter', sans-serif;
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
@@ -436,6 +449,7 @@ nav a:hover {
 }
 
 .project-description strong {
+  font-family: 'Source Code Pro', monospace;
   display: block;
   margin-top: 20px;
   color: #91F778;
@@ -577,7 +591,7 @@ nav a:hover {
   color: #ccc;
   line-height: 1.6;
   margin-top: 20px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Inter', sans-serif;
   text-align: left;
 }
 
@@ -635,6 +649,11 @@ footer p {
     height: 170px;
   }
 
+  .profile-image-container {
+    width: 170px;
+    height: 170px;
+  }
+
   .window-text h1 {
     font-size: 28px;
   }
@@ -650,12 +669,13 @@ footer p {
 
 @media (max-width: 768px) {
   header {
-    padding: 24px 20px 0;
+    padding: 24px 20px 12px;
   }
 
   nav ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    white-space: nowrap;
   }
 
   #main-content {
@@ -679,6 +699,11 @@ footer p {
   }
 
   .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-image-container {
     width: 150px;
     height: 150px;
   }
@@ -738,16 +763,23 @@ footer p {
 
 @media (max-width: 480px) {
   nav ul {
-    padding: 10px 14px;
-    gap: 4px;
+    padding: 10px 12px;
+    gap: 2px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   nav a {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 8px 10px;
   }
 
   .profile-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-image-container {
     width: 130px;
     height: 130px;
   }
@@ -781,7 +813,26 @@ footer p {
   }
 
   .project-card {
-    max-width: 400px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 430px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+
+.project-block p,
+.project-block li {
+  font-family: 'Inter', sans-serif;
 }
