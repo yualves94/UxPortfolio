@@ -678,6 +678,12 @@ footer p {
     white-space: nowrap;
   }
 
+  nav li,
+  nav a {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
   #main-content {
     padding: 40px 20px 56px;
     gap: 32px;
